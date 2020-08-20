@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;    
+    box-sizing: border-box;
+    background: #EEE;
+}
+.clear{
+    clear: both;
+}
+/* start sidebar */
+.sidebar{
+    top:0;
+    direction: rtl;
+    right: -25%;
+    background: #262626;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    font-size: 30px;
+    transition: .8s;
+}
+.active{
+    right:0;
+}
+.sidebar ul{
+    margin: 0;
+    padding: 20px 0;
+}
+.sidebar ul li {
+    list-style-type: none;
+}
+.sidebar ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    border-bottom: 1px solid rgba {0,0,0,.2}
+}
+.sidebarbtn{
+    position: absolute;
+    top: 5px;
+    left: -30%;
+    width: 25%;
+    height: 50px;
+    background: #EEE;
+    cursor: pointer;
+    border:none;
+    outline: none;
+}
+.sidebarbtn span{
+    width: 80%;
+    height: 3px;
+    display: block;
+    top:24px;
+    position: absolute;
+    background: #262626 ;
+}
+.sidebarbtn span:before{
+    content: " ";
+    position: absolute;
+    background: #262626;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+.sidebarbtn span:after{
+    content: " ";
+    position: absolute;
+    background: #262626;
+    top:10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+.sidebarbtn.toggle span{
+    background: #EEE ;
+}
+.sidebarbtn.toggle span:before{
+    top: 0 ;
+    transform: rotate(45deg);
+}
+.sidebarbtn.toggle span:after {
+    top: 0;
+    transform: rotate(-45deg)
+}
+.sidebarbtn span:hover:before{ 
+    content: " ";
+    position: absolute;
+    background: #262626;
+    top: -5px;
+    right: 15px;
+    width: 100%;
+    height: 2px;
+    transform:rotate(-18deg) scalex(.5);
+    transition: all .5s;
+}
+.sidebarbtn span:hover:after{
+    content: " ";
+    position: absolute;
+    background: #262626;
+    top:5px;
+    right: 15px;
+    width: 100%;
+    height: 2px;
+    transform:rotate(18deg) scalex(.5);
+    transition: all .5s;
+}
+/* end sidebar */
+/* start الصفحة الرئيسية */
+.home{
+    font-family: ;
+    font-size: 30px;
+    margin:0 auto;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 40% 0 ;
+    border:3px solid #b2ebf2;
+    font-family:'Lalezar';
+}
+.home span{
+    display: block;
+    color: #1e6f8c;
+    text-shadow: 10px 10px 10px green;
+    font-family: 'Changa', sans-serif;
+}
+/* end الصفحة الرئيسية */
+/* start المناهج */
+table {
+    margin:5% auto;
+    border-collapse:collapse;
+    border:2px solid #35e64f;
+    width: 100%;
+    direction: rtl;
+}
+table caption{
+    font-size: 30px;
+    font-family: 'Lalezar', cursive;
+}
+table,tr,th,td{
+    border:2px solid #35e64f;
+    width: 1000px;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+}
+th{
+    font-size: 25px;
+    font-weight: 200;
+}
+td a {
+    text-decoration: none;
+}
+td a:hover{
+    font-weight: 600;
+}
+/* end المناهج */
+/* start subject */
+.container .subject{
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 100px 0 ;
+    border:2px solid blue;
+    font-family: 'Lemonada', cursive;
+}
+/* end subject */
+
+
