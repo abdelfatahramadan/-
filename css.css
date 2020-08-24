@@ -1,0 +1,321 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+.clear{
+    clear: both;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: 800;
+}
+table{
+    color: white;
+}
+/* start sidebar */
+.sidebar{
+    top:0;
+    direction: rtl;
+    right: -25%;
+    background: linear-gradient(120deg,transparent,#03e9f4);
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    font-size: 30px;
+    transition: .8s;
+}
+.active{
+    right:0;
+}
+.sidebar ul{
+    margin: 0;
+    padding: 20px 0;
+}
+.sidebar ul li {
+    list-style-type: none;
+}
+.sidebar ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    border-bottom: 1px solid rgba {0,0,0,.2}
+}
+.sidebar ul li a:hover{
+    color: #EB0Cff;
+    text-shadow:    0 0 25px #EB0C29,
+                    0 0 50px #EB0C29,
+                    0 0 75px #EB0C29,
+                    0 0 100px #EB0C29;
+}
+.sidebarbtn{
+    position: absolute;
+    top: 5px;
+    left: -30%;
+    width: 25%;
+    height: 50px;
+    background: #000;
+    cursor: pointer;
+    border:none;
+    outline: none;
+}
+.sidebarbtn span{
+    width: 80%;
+    height: 3px;
+    display: block;
+    top:24px;
+    position: absolute;
+    background: white ;
+}
+.sidebarbtn span:before{
+    content: " ";
+    position: absolute;
+    background: white;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+.sidebarbtn span:after{
+    content: " ";
+    position: absolute;
+    background: white;
+    top:10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+.sidebarbtn.toggle span{
+    background: #000 ;
+}
+.sidebarbtn.toggle span:before{
+    top: 0 ;
+    transform:rotate(45deg);
+}
+.sidebarbtn.toggle span:after {
+    top: 0;
+    transform:rotate(-45deg)
+}
+.sidebarbtn.arrowl span{
+    width: 80%;
+    height: 3px;
+    display: block;
+    top:24px;
+    position: absolute;
+    background: white ;
+}
+.sidebarbtn.arrowl span:before{ 
+    top: -5px;
+    right: 15px;
+    width: 100%;
+    height: 2px;
+    transform:rotate(-18deg) scalex(.5);
+    transition:.3s;
+}
+.sidebarbtn.arrowl span:after{
+    top:5px;
+    right: 15px;
+    width: 100%;
+    height: 2px;
+    transform: rotate(18deg) scalex(.5);
+    transition: .3s;
+}
+
+/* end sidebar */
+/* start الصفحة الرئيسية */
+.home{
+    font-family: ;
+    font-size: 30px;
+    margin:0 auto;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 40% 0 ;
+    border:3px solid #b2ebf2;
+    font-family:'Lalezar';
+    color: #6777c7;
+}
+.home span{
+    display: block;
+    color: #FFE4B5;
+    text-shadow: 10px 10px 10px green;
+    font-family: 'Changa', sans-serif;
+}
+/* end الصفحة الرئيسية */
+/* start المناهج */
+table {
+    margin:5% auto;
+    border-collapse:collapse;
+    border:2px solid #35e64f;
+    width: 100%;
+    direction: rtl;
+}
+table caption{
+    font-size: 30px;
+    font-family: 'Lalezar', cursive;
+}
+table,tr,th,td{
+    border:2px solid #35e64f;
+    width: 1000px;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+}
+th{
+    background-color:#189A66;
+    color: #ff8fff;
+    font-size: 25px;
+    font-weight: 400;
+    
+}
+tr:nth-of-type(2),tr:nth-of-type(3),tr:nth-of-type(4),tr:nth-of-type(5),tr:nth-of-type(6),tr:nth-of-type(7),tr:nth-of-type(8),tr:nth-of-type(9){
+    background-color:#955812;
+}
+tr:nth-of-type(10),tr:nth-of-type(11),tr:nth-of-type(12),tr:nth-of-type(13),tr:nth-of-type(14),tr:nth-of-type(15),tr:nth-of-type(16){
+    background-color:#097647;
+}
+tr:nth-of-type(17),tr:nth-of-type(18),tr:nth-of-type(19),tr:nth-of-type(20),tr:nth-of-type(21),tr:nth-of-type(22),tr:nth-of-type(23){
+    background-color:#1E90FF;
+}
+tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:nth-of-type(28),tr:nth-of-type(29){
+    background-color:#483D8B;
+}
+/* end المناهج */
+/* start subject */
+.container .subject{
+    width: 45%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 100px 0 ;
+    border:2px solid blue;
+    font-family: 'Lemonada', cursive;
+    color:#FF00FF;
+}
+/* end subject */
+/* start card */
+.card1{
+    width: 25%;
+    height: 200px;
+    margin: 150px 0 0 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    float: left;
+}
+.card1.rotate {
+    transform: rotateY(180deg);
+}
+.card1:hover{
+    transform: rotateY(180deg);
+}
+.card1 > div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #EEE;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    text-align: center;
+    color: #777;
+}
+.card1 .front {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.card1 .front img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+}
+.card1 .front h3{
+    margin-top: -40px;
+}
+.card1 .front p{
+    margin-top: 0 auto;
+    width: 100%;
+}
+.card1 .front span{
+    display: inline-block;
+    color: blue;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.card1 .back {
+    z-index: 1;
+    transform: rotateY(180deg) ;
+    backface-visibility: hidden;
+}
+.card1 .back p{
+    margin: 70px auto;
+}
+.card2{
+    width: 25%;
+    height: 200px;
+    margin: 150px 0 0 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    float: left;
+}
+.card2.rotate {
+    transform: rotateY(180deg);
+}
+.card2:hover{
+    transform: rotateY(180deg);
+}
+.card2 > div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #EEE;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    text-align: center;
+    color: #777;
+}
+.card2 .front {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.card2 .front img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+}
+.card2 .front h3{
+    margin-top: -40px;
+}
+.card2 .front p{
+    margin-top: 0 auto;
+    width: 100%;
+}
+.card2 .front span{
+    display: inline-block;
+    color: blue;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.card2 .back {
+    z-index: 1;
+    transform: rotateY(180deg) ;
+    backface-visibility: hidden;
+}
+.card2 .back p{
+    margin: 70px auto;
+}
+/* end card */
