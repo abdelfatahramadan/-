@@ -30,6 +30,7 @@ ul {
     height: 100%;
     font-size: 30px;
     transition: .8s;
+    z-index: 999;
 }
 .active{
     right:0;
@@ -357,6 +358,7 @@ tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:n
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
     float: left;
+    z-index: 2;
 }
 .card2.rotate {
     transform: rotateY(180deg);
