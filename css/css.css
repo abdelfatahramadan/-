@@ -139,7 +139,6 @@ ul {
     font-size: 50px;
     font-weight: 500;
     color: #333;
-    
     font-family: 'Changa', sans-serif;
 }
 .home h2 span{
@@ -148,7 +147,6 @@ ul {
     animation-delay: .2s;
     animation-timing-function: linear ;
     animation-play-state: running;
-    
 }
 .home h2 span:nth-child(1){
     animation-delay: 0s;
