@@ -100,6 +100,7 @@ ul {
     top: 0;
     transform:rotate(-45deg)
 }
+/*
 .sidebarbtn.arrowl span{
     width: 80%;
     height: 3px;
@@ -124,11 +125,10 @@ ul {
     transform: rotate(18deg) scalex(.5);
     transition: .3s;
 }
-
+*/
 /* end sidebar */
-/* start الصفحة الرئيسية */
-.home{
-    width: 100%;
+/* start intro */
+.intro{
     text-align: center;
     font-family:'Lalezar';
     display: flex;
@@ -136,95 +136,95 @@ ul {
     align-items: center;
     margin-top: 250px;
 }
-.home h2{
+.intro h2{
     font-size: 50px;
     font-weight: 500;
     color: #333;
     font-family: 'Changa', sans-serif;
 }
-.home h2 span{
+.intro h2 span{
     animation-name: animat;
-    animation-duration: 2s ;
-    animation-delay: .2s;
+    animation-duration: 1s ;
+    animation-delay: .1s;
     animation-timing-function: linear ;
     animation-play-state: running;
 }
-.home h2 span:nth-child(1){
+.intro h2 span:nth-child(1){
     animation-delay: 0s;
 }
-.home h2 span:nth-child(2){
+.intro h2 span:nth-child(2){
     animation-delay: .2s;
 }
-.home h2 span:nth-child(3){
+.intro h2 span:nth-child(3){
     animation-delay: .4s;
 }
-.home h2 span:nth-child(4){
+.intro h2 span:nth-child(4){
     animation-delay: .6s;
 }
-.home h2 span:nth-child(5){
+.intro h2 span:nth-child(5){
     animation-delay: .8s;
 }
-.home h2 span:nth-child(6){
+.intro h2 span:nth-child(6){
     animation-delay: 1s;
 }
-.home h2 span:nth-child(7){
+.intro h2 span:nth-child(7){
     animation-delay: 1.2s;
 }
-.home h2 span:nth-child(8){
+.intro h2 span:nth-child(8){
     animation-delay: 1.4s;
 }
-.home h2 span:nth-child(9){
+.intro h2 span:nth-child(9){
     animation-delay: 1.6s;
 }
-.home h2 span:nth-child(10){
+.intro h2 span:nth-child(10){
     animation-delay: 1.8s;
 }
-.home h2 span:nth-child(11){
+.intro h2 span:nth-child(11){
     animation-delay: 2s;
 }
-.home h2 span:nth-child(12){
+.intro h2 span:nth-child(12){
     animation-delay: 2.2s;
 }
-.home h2 span:nth-child(13){
+.intro h2 span:nth-child(13){
     animation-delay: 2.4s;
 }
-.home h2 span:nth-child(14){
+.intro h2 span:nth-child(14){
     animation-delay: 2.6s;
 }
-.home h2 span:nth-child(15){
+.intro h2 span:nth-child(15){
     animation-delay: 2.8s;
 }
-.home h2 span:nth-child(16){
+.intro h2 span:nth-child(16){
     animation-delay: 3s;
 }
-.home h2 span:nth-child(17){
+.intro h2 span:nth-child(17){
     animation-delay: 3.2s;
 }
-.home h2 span:nth-child(18){
+.intro h2 span:nth-child(18){
     animation-delay: 3.4s;
 }
-.home h2 span:nth-child(19){
+.intro h2 span:nth-child(19){
     animation-delay: 3.6s;
 }
-.home h2 span:nth-child(20){
+.intro h2 span:nth-child(20){
     animation-delay: 3.8s;
 }
-.home h2 span:nth-child(21){
+.intro h2 span:nth-child(21){
     animation-delay: 4s;
 }
-.home h2 span:nth-child(22){
+.intro h2 span:nth-child(22){
     animation-delay: 4.2s;
 }
-.home h2 span:nth-child(23){
+.intro h2 span:nth-child(23){
     animation-delay: 4.4s;
 }
-.home h2 span:nth-child(24){
+.intro h2 span:nth-child(24){
     animation-delay: 4.6s;
 }
-.home h2 span:nth-child(25){
+.intro h2 span:nth-child(25){
     animation-delay: 4.8s;
 }
-.home h2 span:nth-child(26){
+.intro h2 span:nth-child(26){
     animation-delay: 5s;
 }
 @keyframes animat{
@@ -242,13 +242,43 @@ ul {
                      0 0 160px #1133fc;
     }
 }
-/* end الصفحة الرئيسية */
+/* end intro */
+/* start home */
+.home h1{
+    color :blue;
+    text-align: center;
+}
+.home h1 span{
+    color: yellow;
+    font-size: 15px;
+    
+}
+.home dl{
+    direction: rtl;
+}
+.home dt{
+    color :red;
+    text-align: right;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.home dd{
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.home .h{
+    color: darkorange;
+    font-size: 40px;
+    margin-left: 40%;
+}
+/* start home */
 /* start المناهج */
 table {
     margin:5% auto;
     border-collapse:collapse;
-    width: 100%;
     direction: rtl;
+    width: 100%;
 }
 table caption{
     font-size: 60px;
@@ -460,7 +490,7 @@ tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:n
 }
 .circle ul{
     position: absolute;
-    top: 170px;
+    top: 180px;
     left: 130px;
 }
 .circle ul li i{
