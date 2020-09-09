@@ -8,12 +8,11 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-origin: border-box;
-    background-color: black;
     color: black;
 }
 a{
-    text-decoration: none;
-    color: pink;
+    text-decoration: none; 
+    color: white;
 }
 a:hover{
     font-weight: 800;
@@ -21,26 +20,17 @@ a:hover{
 ul {
     list-style-type: none;
 }
-/* start nav bar */
-nav{
-    width: 15%;
-    font-size: 20px;
-}
-nav a{
-    color:black;
-}
-/* end nav bar */
 /* start sidebar */
 .sidebar{
     top:0;
     direction: rtl;
     right: -25%;
-    background: linear-gradient(120deg,transparent,#03e9f4);
+    background-image: linear-gradient(blue, lightblue, white);
     position: fixed;
     width: 25%;
     height: 100%;
-    font-size: 30px;
-    transition: .8s;
+    font-size: 200%;
+    transition: 1.5s;
     z-index: 999;
 }
 .active{
@@ -59,11 +49,8 @@ nav a{
     direction: rtl;
 }
 .sidebar ul li a:hover{
-    color: #EB0Cff;
-    text-shadow:    0 0 25px #EB0C29,
-                    0 0 50px #EB0C29,
-                    0 0 75px #EB0C29,
-                    0 0 100px #EB0C29;
+    
+    text-shadow: 6px 6px 10px #000;
 }
 .sidebarbtn{
     position: absolute;
@@ -124,7 +111,7 @@ nav a{
     margin-top: 250px;
 }
 .intro h2{
-    font-size: 50px;
+    font-size: 300%;
     font-weight: 500;
     color: #333;
     font-family: 'Changa', sans-serif;
@@ -231,10 +218,6 @@ nav a{
 }
 /* end intro */
 /* start home */
-.home{
-    
-    
-}
 .home h1{
     color :blue;
     text-align: center;
@@ -256,7 +239,6 @@ nav a{
     color: yellow;
 }
 .home .h{
-    
     font-size: 40px;
     margin-left: 40%;
 }
@@ -324,16 +306,11 @@ tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:n
 /* end subject */
 /* start card */
 .card1{
-    width: 28%;
+    width: 30%;
     height: 200px;
     margin: 150px 0 0 150px;
     position: relative;
-    transform-style: preserve-3d;
-    transition: all 1s ease-in-out;
     float: left;
-}
-.card1.rotate {
-    transform: rotateY(180deg);
 }
 .card1 > div {
     top: 0;
@@ -346,10 +323,6 @@ tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:n
     border: 1px solid #CCC;
     text-align: center;
     color: #000;
-}
-.card1 .front {
-    z-index: 2;
-    backface-visibility: hidden;
 }
 .card1 .front img{
     width: 100px;
@@ -371,26 +344,12 @@ tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:n
     font-weight: bold;
     margin-top: 20px;
 }
-.card1 .back {
-    z-index: 1;
-    transform: rotateY(180deg) ;
-    backface-visibility: hidden;
-}
-.card1 .back p{
-    margin: 70px auto;
-}
 .card2{
-    width: 28%;
+    width: 30%;
     height: 200px;
     margin: 150px 0 0 150px;
     position: relative;
-    transform-style: preserve-3d;
-    transition: all 1s ease-in-out;
     float: left;
-    z-index: 2;
-}
-.card2.rotate {
-    transform: rotateY(180deg);
 }
 .card2 > div {
     top: 0;
@@ -404,10 +363,6 @@ tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:n
     text-align: center;
     color: #000;
 }
-.card2 .front{
-    z-index: 2;
-    backface-visibility: hidden;
-}
 .card2 .front img{
     width: 100px;
     height: 100px;
@@ -420,30 +375,21 @@ tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:n
 }
 .card2 .front p{
     margin-top: 0 auto;
-    width: 100%;
+    
 }
 .card2 .front span{
     display: inline-block;
     color: blue;
-    font-weight: bold;
-    margin-top: 20px;
-}
-.card2 .back {
-    z-index: 1;
-    transform: rotateY(180deg) ;
-    backface-visibility: hidden;
-}
-.card2 .back p{
-    margin: 70px auto;
+    font-weight: bold; 
 }
 /* end card */
 /* start call */
 .circle{
-    width:55%;
-    height: 550px;
+    width:50%;
+    height: 500px;
     position: relative;
     left: 20%;
-    top:100px;
+    top:20%;
 }
 .circle:before{
     content: " ";
@@ -454,20 +400,21 @@ tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:n
     right: 100px;
     border: 20px solid goldenrod;
     border-radius: 50%;
-    box-shadow: 0 0 20px gold,
-          inset 0 0 20px gold;
-    
-    -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,#0002);
-    
+    box-shadow: 0 0 20px gold;
+    background-color: gold;
     
 }
-
 .circle ul{
     position: absolute;
-    top: 180px;
+    top: 193px;
     left: 130px;
 }
 .circle ul li i{
-    font-size: 40px;
+    font-size: 40px;   
+}
+.circle a{
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
 }
 /* end call */
