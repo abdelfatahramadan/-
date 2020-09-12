@@ -7,7 +7,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-origin: border-box;
     color: black;
 }
 a{
@@ -25,7 +24,7 @@ ul {
     top:0;
     direction: rtl;
     right: -25%;
-    background-image: linear-gradient(blue, lightblue, white);
+    background-image: linear-gradient(#000, #555,#aaa ,#fff);
     position: fixed;
     width: 25%;
     height: 100%;
@@ -45,7 +44,6 @@ ul {
     padding: 10px 20px;
     color: #fff;
     display: block;
-    border-bottom: 1px solid rgba {0,0,0,.2}
     direction: rtl;
 }
 .sidebar ul li a:hover{
@@ -406,15 +404,15 @@ tr:nth-of-type(24),tr:nth-of-type(25),tr:nth-of-type(26),tr:nth-of-type(27),tr:n
 }
 .circle ul{
     position: absolute;
-    top: 193px;
+    top: 150px;
     left: 130px;
-}
-.circle ul li i{
-    font-size: 40px;   
+    font-size: 25px;
 }
 .circle a{
     color: black;
-    font-size: 20px;
-    margin-left: 15px;
+    padding-left: 20px; 
+}
+.circle li{
+    margin-top: 20px;
 }
 /* end call */
