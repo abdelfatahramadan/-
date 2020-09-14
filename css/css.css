@@ -50,9 +50,9 @@ ul {
 }
 .sidebarbtn{
     position: absolute;
-    top: 5px;
+    top: 2%;
     left: -25%;
-    width: 20%;
+    width: 15%;
     height: 10%;
     background: #000;
     cursor: pointer;
@@ -60,10 +60,11 @@ ul {
     outline: none;
     color: white;
     font-size: 70%;
+    overflow: hidden;
 }
 .sidebarbtn2{
     position: absolute;
-    top: 5px;
+    top: 2%;
     left: -25%;
     width: 20%;
     height: 10%;
@@ -73,6 +74,7 @@ ul {
     outline: none;
     color: white;
     font-size: 70%;
+    overflow: hidden;
     visibility: hidden;
 }
 .sidebarbtn2.toggle {
@@ -226,7 +228,6 @@ ul {
 /* end home */
 /* start المناهج */
 table{
-    
     direction: rtl;
     width: 100%;
     text-align: center;
@@ -247,7 +248,7 @@ table th{
     font-weight: bolder;
 }
 table td{
-    font-size: 130%;
+    font-size: 100%;
     background-color: black;
     opacity: .5;
 }
@@ -289,7 +290,6 @@ table td{
     top: 107px;
 }
 .circle a{
-     
     display: inline-block;
     padding: 20px;
 }
