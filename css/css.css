@@ -28,7 +28,7 @@ ul {
     position: fixed;
     width: 50%;
     height: 100%;
-    font-size: 250%;
+    font-size: 200%;
     transition: .5s;
     z-index: 999;
 }
@@ -36,7 +36,6 @@ ul {
     right:0;
 }
 .sidebar ul{
-    margin: 0;
     padding: 20px 0;
     direction: rtl;
 }
@@ -52,8 +51,8 @@ ul {
 .sidebarbtn{
     position: absolute;
     top: 5px;
-    left: -30%;
-    width: 25%;
+    left: -25%;
+    width: 20%;
     height: 10%;
     background: #000;
     cursor: pointer;
@@ -65,8 +64,8 @@ ul {
 .sidebarbtn2{
     position: absolute;
     top: 5px;
-    left: -30%;
-    width: 25%;
+    left: -25%;
+    width: 20%;
     height: 10%;
     background: #000;
     cursor: pointer;
