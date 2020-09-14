@@ -22,14 +22,14 @@ ul {
 /* start sidebar */
 .sidebar{
     top:0;
-    direction: rtl;
-    right: -25%;
-    background-image: linear-gradient(#000, #555,#aaa ,#fff);
+    text-align: center;
+    right: -50%;
+    background-image: linear-gradient(#000,#666,#aaa);
     position: fixed;
-    width: 25%;
+    width: 50%;
     height: 100%;
-    font-size: 200%;
-    transition: 1s;
+    font-size: 250%;
+    transition: .5s;
     z-index: 999;
 }
 .active{
@@ -54,169 +54,154 @@ ul {
     top: 5px;
     left: -30%;
     width: 25%;
-    height: 50px;
+    height: 10%;
     background: #000;
     cursor: pointer;
     border:none;
     outline: none;
+    color: white;
+    font-size: 70%;
 }
-.sidebarbtn span{
-    width: 80%;
-    height: 3px;
-    display: block;
-    top:24px;
+.sidebarbtn2{
     position: absolute;
-    background: white ;
+    top: 5px;
+    left: -30%;
+    width: 25%;
+    height: 10%;
+    background: #000;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    color: white;
+    font-size: 70%;
+    visibility: hidden;
 }
-.sidebarbtn span:before{
-    content: " ";
-    position: absolute;
-    background: white;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    height: 3px;
+.sidebarbtn2.toggle {
+     visibility: visible;
 }
-.sidebarbtn span:after{
-    content: " ";
-    position: absolute;
-    background: white;
-    top:10px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-}
-.sidebarbtn.toggle span{
-    background: #000 ;
-}
-.sidebarbtn.toggle span:before{
-    top: 0 ;
-    transform:rotate(45deg);
-}
-.sidebarbtn.toggle span:after {
-    top: 0;
-    transform:rotate(-45deg)
+.sidebarbtn2.toggle {
+     visibility: visible;
 }
 /* end sidebar */
 /* start intro */
 .intro{
-    text-align: center;
-    font-family:'Lalezar';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 250px;
+    top: 300px;
+    left: 10px;
+    position: absolute;
 }
 .intro h2{
-    font-size: 300%;
+    text-align: center;
+    font-size: 370%;
     font-weight: 500;
-    color: #333;
-    font-family: 'Changa', sans-serif;
+    color: #888;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster', cursive;
 }
 .intro h2 span{
     animation-name: animat;
     animation-duration: 1s ;
-    animation-delay: .1s;
-    animation-timing-function: linear ;
-    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    
 }
 .intro h2 span:nth-child(1){
     animation-delay: 0s;
 }
 .intro h2 span:nth-child(2){
-    animation-delay: .2s;
+    animation-delay: .1s;
 }
 .intro h2 span:nth-child(3){
-    animation-delay: .4s;
+    animation-delay: .2s;
 }
 .intro h2 span:nth-child(4){
-    animation-delay: .6s;
+    animation-delay: .3s;
 }
 .intro h2 span:nth-child(5){
-    animation-delay: .8s;
+    animation-delay: .4s;
 }
 .intro h2 span:nth-child(6){
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 .intro h2 span:nth-child(7){
-    animation-delay: 1.2s;
+    animation-delay: .6s;
 }
 .intro h2 span:nth-child(8){
-    animation-delay: 1.4s;
+    animation-delay: .7s;
 }
 .intro h2 span:nth-child(9){
-    animation-delay: 1.6s;
+    animation-delay: .8s;
 }
 .intro h2 span:nth-child(10){
-    animation-delay: 1.8s;
+    animation-delay: .9s;
 }
 .intro h2 span:nth-child(11){
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 .intro h2 span:nth-child(12){
-    animation-delay: 2.2s;
+    animation-delay: 1.1s;
 }
 .intro h2 span:nth-child(13){
-    animation-delay: 2.4s;
+    animation-delay: 1.2s;
 }
 .intro h2 span:nth-child(14){
-    animation-delay: 2.6s;
+    animation-delay: 1.3s;
 }
 .intro h2 span:nth-child(15){
-    animation-delay: 2.8s;
+    animation-delay: 1.4s;
 }
 .intro h2 span:nth-child(16){
-    animation-delay: 3s;
+    animation-delay: 1.5s;
 }
 .intro h2 span:nth-child(17){
-    animation-delay: 3.2s;
+    animation-delay: 1.6s;
 }
 .intro h2 span:nth-child(18){
-    animation-delay: 3.4s;
+    animation-delay: 1.7s;
 }
 .intro h2 span:nth-child(19){
-    animation-delay: 3.6s;
+    animation-delay: 1.8s;
 }
 .intro h2 span:nth-child(20){
-    animation-delay: 3.8s;
+    animation-delay: 1.9s;
 }
 .intro h2 span:nth-child(21){
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 .intro h2 span:nth-child(22){
-    animation-delay: 4.2s;
+    animation-delay: 2.1s;
 }
 .intro h2 span:nth-child(23){
-    animation-delay: 4.4s;
+    animation-delay: 2.2s;
 }
 .intro h2 span:nth-child(24){
-    animation-delay: 4.6s;
+    animation-delay: 2.3s;
 }
 .intro h2 span:nth-child(25){
-    animation-delay: 4.8s;
+    animation-delay: 2.4s;
 }
 .intro h2 span:nth-child(26){
-    animation-delay: 5s;
+    animation-delay: 2.5s;
 }
 @keyframes animat{
     0%,80%{
-        color :#333;
+        color :#888;
         text-shadow: none;
     }
     100%{
-        color:#1133fc;
-        text-shadow: 0 0 10px #1133fc,
-                     0 0 20px #1133fc,
-                     0 0 40px #1133fc,
-                     0 0 80px #1133fc,
-                     0 0 120px #1133fc,
-                     0 0 160px #1133fc;
+        font-weight: bolder;
+        color:#116FFF;
+        text-shadow: 0 0 5px #0000ff,
+                     0 0 25px #0000ff,
+                     0 0 50px #0000ff,
+                     0 0 200px #0000ff,
+                     0 0 200px #0000ff,
+                     0 0 300px #0000ff,
+                     0 0 400px #0000ff;        
     }
 }
 /* end intro */
 /* start home */
 .home h1{
-    color :blue;
+    color :black;
     text-align: center;
 }
 .home dl{
@@ -226,11 +211,11 @@ ul {
 }
 .home dt{
     color :white;
-    font-size: 150%;
+    font-size: 200%;
     margin-right: 2%;
 }
 .home dd{
-    font-size: 120%;
+    font-size: 150%;
     font-weight: 500;
     color: yellow;
 }
@@ -242,7 +227,7 @@ ul {
 /* end home */
 /* start المناهج */
 table{
-    margin:5% auto;
+    
     direction: rtl;
     width: 100%;
     text-align: center;
@@ -258,12 +243,12 @@ table tr{
 }
 table th{
     background-color:#000;
-    color: pink;
+    color: #aaa;
     font-size: 150%;
     font-weight: bolder;
 }
 table td{
-    font-size: 100%;
+    font-size: 130%;
     background-color: black;
     opacity: .5;
 }
@@ -274,94 +259,17 @@ table td{
     padding: 20px;
     margin: 10px auto;
     text-align: center;
-    border-radius: 100px 0 ;
+    border-radius: 50% 0 ;
     border:2px solid blue;
-    font-family: 'Lemonada', cursive;
-    font-size: 20px;
+    font-family: 'Lemonada';
+    font-size: 160%;
 }
 /* end subject */
 /* start card */
-.card1{
-    width: 30%;
-    height: 200px;
-    top: 150px;
-    left: 100px;
-    position: relative;
-    float: left;
-}
-.card1 .front{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #aaa;
-    border-radius: 5%;
-    border: 5px solid #000;
-    text-align: center;
-    color: #000;
-}
-.card1 .front img{
-    width: 35%;
-    height: 50%;
-    border-radius: 50%;
-    position: absolute;
-    top: -53px;
-    left: 100px;
-    border: 3px solid blue;
-}
-.card1 .front .par{
-    left: 40px;
-    top: 56px;
-    position: absolute;
-}
-.card1 .front p{
-    margin-top: 0 auto;
-    font-size: 120%;
-}
-.card1 .front span{
-    display: inline-block;
-    color: blue;
-    font-weight: bolder;
-}
-.card2{
-    width: 30%;
-    height: 200px;
-    top: 150px;
-    left: 200px;
-    position: relative;
-    float: left;
-}
-.card2 .front {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #aaa;
-    border-radius: 5%;
-    border: 5px solid #000;
-    text-align: center;
-    color: #000;
-}
-.card2 .front img{
-    width: 35%;
-    height: 50%;
-    border-radius: 50%;
-    position: absolute;
-    top: -53px;
-    left: 100px;
-    border: 3px solid blue;
-}
-.card2 .front .par{
-    top: 56px;
-    position: absolute;
-}
-.card2 .front p{
-    margin-top: 0 auto;
-    font-size: 120%;
-}
-.card2 .front span{
-    display: inline-block;
-    color: blue;
-    font-weight: bolder;
-}
+
+
+
+
 /* end card */
 /* start call */
 .circle{

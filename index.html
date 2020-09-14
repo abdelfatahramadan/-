@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="intro">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title> المعهد </title>
         <link rel="stylesheet" href="css/css.css" type="text/css">
         
-        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@800&family=Lalezar&family=Lemonada:wght@300&family=Rakkas&family=Reem+Kufi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lobster&display=swap" rel="stylesheet">
         
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script type="text/javascript">
@@ -15,6 +17,10 @@
                         $('.sidebar').toggleClass('active');
                         $('.sidebarbtn').toggleClass('toggle');
                 })
+                $('.sidebarbtn2').click(function(){
+                        $('.sidebar').toggleClass('active');
+                        $('.sidebarbtn2').toggleClass('toggle');
+                })
         }) 
         </script>
         <!-- للانتقال لصفحة اخرى -->
@@ -22,7 +28,7 @@
             setTimeout(function(){
                 window.location.href = 'elmahad.html';
          }, 
-                6500);
+                4000);
         </script>
     </head>
     <body>
@@ -37,9 +43,8 @@
                 <li><a href="call.html"> الاتصال </a> </li>
                 <li><a href="note.html"> الملاحظات </a> </li>
             </ul>
-            <button class="sidebarbtn"> 
-                <span>  </span>
-            </button>
+            <button class="sidebarbtn">Menu</button>
+            <button class="sidebarbtn2">Close</button>
         </div>
         <!-- end sidebar -->
         <!-- start intro -->

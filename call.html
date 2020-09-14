@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="وسائل التواصل">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title> معلومات الاتصال </title>
         <link rel="stylesheet" href="css/css.css" type="text/css">
         
@@ -17,17 +19,16 @@
             $(document).ready(function(){
                     $('.sidebarbtn').click(function(){
                         $('.sidebar').toggleClass('active');
-                        $('.sidebarbtn').toggleClass('toggle');
+                        $('.sidebarbtn2').toggleClass('toggle');
+                })
+                    $('.sidebarbtn2').click(function(){
+                        $('.sidebar').toggleClass('active');
+                        $('.sidebarbtn2').toggleClass('toggle');
                 })
         }) 
         </script>
-        
-        
-        
     </head>
     <body>
-        
-        
         <!-- start sidebar -->
         <div class="sidebar"> 
             <ul>
@@ -38,9 +39,8 @@
                 <li><a href="call.html"> الاتصال </a> </li>
                 <li><a href="note.html"> الملاحظات </a> </li>
             </ul>
-            <button class="sidebarbtn"> 
-                <span>  </span>
-            </button>
+            <button class="sidebarbtn">Menu</button>
+            <button class="sidebarbtn2">Close</button>
         </div>
         <!-- end sidebar -->
         <!-- start call -->
@@ -52,7 +52,7 @@
                 
                 <li> <i class="fa fa-youtube-play" style="color: red"> </i><a href="https://www.youtube.com/channel/UC2NZTEorln5dU8sp_hDrb3g">Youtube</a> </li>
                 
-                <li> <i class="fa fa-github" style="color: black"></i><a href="https://abdelfatahramadan.github.io/technology-academy/">Github</a> </li>
+                <li> <i class="fa fa-github" style="color: black"></i><a href="https://abdelfatahramadan.github.io/technology-academy/">GitHub</a> </li>
                 
             </ul>
         </div>

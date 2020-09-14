@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta name="description" content="المكونات المادية للحاسب الالى">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title> صيانة </title>
         <link rel="stylesheet" href="../css/css.css" type="text/css">
         
@@ -14,6 +16,10 @@
                     $('.sidebarbtn').click(function(){
                         $('.sidebar').toggleClass('active');
                         $('.sidebarbtn').toggleClass('toggle');
+                })
+                    $('.sidebarbtn2').click(function(){
+                        $('.sidebar').toggleClass('active');
+                        $('.sidebarbtn2').toggleClass('toggle');
                 })
         }) 
         </script>
@@ -29,9 +35,8 @@
                 <li><a href="../call.html"> الاتصال </a> </li>
                 <li><a href="../note.html"> الملاحظات </a> </li>
             </ul>
-            <button class="sidebarbtn"> 
-                <span>  </span>
-            </button>
+            <button class="sidebarbtn">Menu</button>
+            <button class="sidebarbtn2">Close</button>
         </div>
         <!-- end sidebar -->
         <!-- start subject -->
