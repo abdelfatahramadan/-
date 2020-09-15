@@ -8,6 +8,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     color: black;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none; 
@@ -31,7 +32,7 @@ ul {
     font-size: 30px;
     transition: .5s;
     z-index: 999;
-    scroll-behavior: auto;
+
 }
 .active{
     right:0;
@@ -52,8 +53,8 @@ ul {
 .sidebarbtn{
     position: absolute;
     top: 2%;
-    left: -20%;
-    width: 80px;
+    left: -90px;
+    width: 15%;
     height: 10%;
     background: #000;
     cursor: pointer;
@@ -66,8 +67,8 @@ ul {
 .sidebarbtn2{
     position: absolute;
     top: 2%;
-    left: -20%;
-    width: 80px;
+    left: -90px;
+    width: 15%;
     height: 10%;
     background: #000;
     cursor: pointer;
@@ -267,10 +268,41 @@ table td{
 }
 /* end subject */
 /* start card */
-
-
-
-
+.container{
+    position: relative;
+    width: 70%;
+    height: 400px;
+    background-color: #222;
+    top: 200px;
+    left: 150px;
+}
+.container .clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.container .clip1:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.container .clip2:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.container .clip1{
+    background-image: url("../images/abdo.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 50% 50%, 0 100%);
+}
+.container .clip2{
+    background-image: url("../images/moh.jpg");
+    background-size: cover;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
+}
 /* end card */
 /* start call */
 .circle{
