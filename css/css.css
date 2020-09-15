@@ -52,7 +52,7 @@ ul {
     position: absolute;
     top: 2%;
     left: -20%;
-    width: 15%;
+    width: 80px;
     height: 10%;
     background: #000;
     cursor: pointer;
@@ -66,14 +66,14 @@ ul {
     position: absolute;
     top: 2%;
     left: -20%;
-    width: 20%;
+    width: 20px;
     height: 10%;
     background: #000;
     cursor: pointer;
     border:none;
     outline: none;
     color: white;
-    font-size: 25px;
+    font-size: 80px;
     overflow: hidden;
     visibility: hidden;
 }
