@@ -26,11 +26,12 @@ ul {
     right: -50%;
     background-image: linear-gradient(#000,#666,#aaa);
     position: fixed;
-    width: 500px;
+    width: 50%;
     height: 100%;
     font-size: 30px;
     transition: .5s;
     z-index: 999;
+    scroll-behavior: auto;
 }
 .active{
     right:0;
