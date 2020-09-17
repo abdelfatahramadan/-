@@ -87,11 +87,11 @@ ul {
 /* end sidebar */
 /* start intro */
 .intro{
-    margin-top: 30%;
+    margin-top: 35%;
     text-align: center;
 }
 .intro h2{
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 500;
     color: #888;
     font-family: 'Josefin Sans', sans-serif;
