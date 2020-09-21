@@ -23,6 +23,7 @@ ul {
     height: 6%;
     position: fixed;
     display: flex;
+    margin: 0;
     z-index: 10000;
 }
 .sidebar{
@@ -30,7 +31,7 @@ ul {
     top: -74%;
     background:#6495ed;
     position: fixed;
-    height: 74%;
+    height: 70%;
     width: 100%;
     font-size: 45px;
     transition: .5s;
@@ -40,12 +41,12 @@ ul {
     top:0;
 }
 .sidebar ul{
-    padding: 20px 0;
+    
     margin-top: 0;
     direction: rtl;
 }
 .sidebar ul li a{
-    padding: 10px 20px;
+    padding: 1% 0 1% ;
     color: #fff;
     display: block;
     direction: rtl;
@@ -57,7 +58,7 @@ ul {
 .sidebarbtn{
     position: absolute;
     right: 2%;
-    top: 101%;
+    top: 107%;
     width: 10%;
     height: 6%;
     background: green;
@@ -71,7 +72,7 @@ ul {
 .sidebarbtn2{
     position: absolute;
     right: 2%;
-    top: 101%;
+    top: 107%;
     width: 10%;
     height: 6%;
     background: green;
@@ -207,6 +208,8 @@ ul {
 .home h1{
     color:black;
     text-align: center;
+    margin: 0;
+    padding-top: 4%;
 }
 .home dl{
     direction: rtl;
@@ -239,6 +242,7 @@ table caption{
     font-family: 'Lalezar';
     color: #555;
     font-size: 60px;
+    padding-top: 5%;
 }
 table th{
     background-color:#000;
