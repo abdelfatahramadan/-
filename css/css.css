@@ -27,15 +27,14 @@ ul {
 }
 .sidebar{
     text-align: center;
-    top: -462px;
+    top: -74%;
     background:#6495ed;
     position: fixed;
-    height: 462px;
+    height: 74%;
     width: 100%;
     font-size: 45px;
     transition: .5s;
     z-index: 999;
-    margin-top: 0;
 }
 .active{
     top:0;
