@@ -1,0 +1,62 @@
+body {    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #d3d3d3;
+    
+}
+.cont{
+    top: 30% ;
+    left:35% ;
+    font-family: 'Charmonman', cursive;
+    position: absolute;
+    width: 100%;
+}
+.w{
+    font-size: 800%;
+    float: left;
+    
+}
+.contt{
+    font-size: 230%;
+    float: left;
+    padding-top: 35px;
+}
+
+@media screen and (max-width:600px){
+    
+    .cont{
+        top: 30% ;
+        left:30% ; 
+        overflow: hidden;
+        width: 100%;
+        height: 200px;
+        font-size: 80%;
+    }
+}
+/* start button */
+.btn, .btnn{
+    background-color: black; 
+    border: none; 
+    color: white; 
+    padding: 1% 3%;
+    font-size: 2vw; 
+    font-family: 'Aref Ruqaa', serif;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 100px;
+}
+.btn{
+    top: 85%;
+    left: 10vw;
+}
+.btnn{
+    top: 85%;
+    left: 78vw;
+}
+.btn:hover, .btnn:hover{
+    background-color: #777;
+}
+/* end button */
