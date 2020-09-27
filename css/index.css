@@ -2,8 +2,6 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100px;
     background-color: #d3d3d3;
     
 }
@@ -12,7 +10,6 @@ body {
     left:35% ;
     font-family: 'Charmonman', cursive;
     position: absolute;
-    width: 100%;
 }
 .w{
     font-size: 800%;
@@ -29,11 +26,17 @@ body {
     
     .cont{
         top: 30% ;
-        left:30% ; 
-        overflow: hidden;
-        width: 100%;
-        height: 200px;
+        left: 20%;
         font-size: 80%;
+    }
+}
+@media screen and (max-width:300px){
+    .cont{
+        font-size: 40%;
+        left: 20%;
+    }
+    .contt{
+        padding-top: 20px;
     }
 }
 /* start button */
