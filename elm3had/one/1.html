@@ -14,58 +14,66 @@
         <!-- dropdown is menu -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
+        <!-- netlify icon -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        
     </head>
     <body>
        
         <!-- start menu -->
-        <div class="topnav" id="myTopnav">
-            <div class="logo">
-                <img src="../../images/3.png">
-                <div class="logo2">
-                    <a href="../elmahad.html"><span class="a">Al-</span>
-                    <span class="b">Sahafa</span></a>
-                </div>
-            </div>
-            <a href="../../index.html">الرئيسية</a>
-            
-            <div class="dropdown">
-                <button class="dropbtn" >المنهج 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" >
-                    <a href="1.html" class="active">الترم الاول</a>
-                    <a href="../two/2.html">الترم الثانى</a>
-                    <a href="../three/3.html">الترم الثالث</a>
-                    <a href="../four/4.html">الترم الرابع</a>
-                </div>
-            </div> 
-            
-            <div class="dropdown">
-                <button class="dropbtn">الاتصال 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a target="_blank" href="https://www.youtube.com/channel/UC2NZTEorln5dU8sp_hDrb3g"><i class="fa fa-youtube-play" style="color: red"> </i> Youtube </a>
-                    <a target="_blank"  href="https://www.facebook.com/profile.php?id=100006586350898"> <i class="fa fa-facebook-square" style="color: #3b4dde"> </i> Facebook</a>
-                    <a target="_blank" href="https://abdelfatahramadan.github.io/technology-academy/"> <i class="fa fa-github" style="color: black"></i> GitHub</a>
-                </div>
-            </div> 
-           
-            <!-- menu device mobile -->
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    <div class="logo">
+                       <a href="../elmahad.html"> <img src="../../images/3.png"> </a> 
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="../../index.html"> الصفحة الرئيسية </a></li>
+                            <li class="dropdown"><a class="dropbtn" href="#"> المنهج </a>
+                            <div class="dropdown-content">
+                                <a href="1.html">الترم الاول</a>
+                                <a href="../two/2.html">الترم الثانى</a>
+                                <a href="../three/3.html">الترم الثالث</a>
+                                <a href="../four/4.html">الترم الرابع</a>
+                            </div>
+                            </li>
+                            <li class="dropdown"><a class="dropbtn" href="#"> الاتصال</a>
+                            <div class="dropdown-content">
+                                <a target="_blank" href="https://www.youtube.com/channel/UC2NZTEorln5dU8sp_hDrb3g"><i class="fa fa-youtube-play" style="color: red"> </i> Youtube </a>
+                                <a target="_blank"  href="https://www.facebook.com/profile.php?id=100006586350898"> <i class="fa fa-facebook-square" style="color: #3b4dde"> </i> Facebook</a>
+                                <a target="_blank"  href="https://www.facebook.com/profile.php?id=100014010224624"> <i class="fa fa-facebook-square" style="color: #3b4dde"> </i> Facebook2</a>
+                                <a target="_blank" href="https://abdelfatahramadan.github.io/technology-academy/"> <i class="fa fa-github" style="color: black"></i> GitHub</a>
+                                <a target="_blank" href="https://educationalencyclopedia.netlify.app/"> <i class="iconify" data-icon="logos-netlify" data-inline="false"></i> Netlify </a>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
         </div>
         <!-- end menu -->
         
         <!-- start js -->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".menu-icon").on("click",function(){
+                    $("nav ul").toggleClass("showing");
+                    
+                });
+              });
+            
+            $(window).on("scroll",function(){
+                if($(window).scrollTop()){
+                    $('nav').addClass('black');
                 }
-            }
+                else{
+                    $('nav').removeClass('black');
+                }
+            })
         </script>
         <!-- end js -->
         

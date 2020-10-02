@@ -10,16 +10,20 @@ body {
     left:35% ;
     font-family: 'Charmonman', cursive;
     position: absolute;
+    
 }
 .w{
     font-size: 800%;
     float: left;
-    
+    color:#444;
+    text-shadow: -7px 5px black;
 }
 .contt{
     font-size: 230%;
     float: left;
     padding-top: 35px;
+    color:#444;
+    text-shadow: -3px 3px 3px black;
 }
 
 @media screen and (max-width:600px){
@@ -45,7 +49,7 @@ body {
     border: none; 
     color: white; 
     padding: 1% 3%;
-    font-size: 2vw; 
+    font-size: 100%; 
     font-family: 'Aref Ruqaa', serif;
     cursor: pointer;
     position: absolute;
@@ -57,7 +61,7 @@ body {
 }
 .btnn{
     top: 85%;
-    left: 78vw;
+    left: 70vw;
 }
 .btn:hover, .btnn:hover{
     background-color: #777;
