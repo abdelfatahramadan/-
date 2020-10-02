@@ -91,7 +91,7 @@ nav ul li a{
         background: #fff;
     }
     nav.black ul{
-        background: #000;
+        background: white;
     }
     .showing{
         max-height: 20em;
