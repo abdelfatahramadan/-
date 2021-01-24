@@ -2,10 +2,74 @@
     padding: 0;
     margin: 0;
 }
-body {
-    width: 100%;
-    background-color: #d3d3d3;
+
+.container{
+    padding-top: 20px;
+    height: 650px;
 }
+.container .color-switcher{
+    list-style:none;
+    text-align: center;
+}
+.container .color-switcher li{
+    width: 60px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+.container .color-switcher li:first-child{
+    background-color: red;
+}
+
+.container .color-switcher li:nth-child(2){
+    background-color: black;
+ }
+
+
+.red .container{
+    background-image: url(../images/thumb-1920-786410.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.red button{
+    background-color: rgb(243, 232, 237);
+    color: rgb(45, 43, 161);
+}
+.red .cont .w{
+    color:rgb(238, 247, 248);
+    text-shadow: 5px 5px rgb(43, 43, 7);
+}
+.red .contt{
+    color:rgb(145, 79, 55);
+}
+
+
+
+.black .container{
+    background-image: url(../images/744325.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.black button{
+    background-color: black;
+    color: white;
+}
+.black .cont .w{
+    color:black;
+    text-shadow: 5px 5px yellow;
+}
+.black .contt{
+    color:orangered;
+}
+
+
 
 .cont{
     width: 310px;
@@ -14,7 +78,6 @@ body {
     text-align: center;
     margin: 15% auto 0;
     font-size: 40px;
-    
 }
 .w{
     display: inline-block;
@@ -22,7 +85,6 @@ body {
     font-size: 160px;
     font-family:serif;
     font-weight: bold;
-    text-shadow: 5px 5px #999;
 }
 .contt{
     line-height: 90px;
@@ -39,30 +101,34 @@ body {
     opacity: .7;
 }
 .btn,.btnn{
-    background: black;
-    color: white;
     width: 150px;
     height: 50px;
     font-family: 'Aref Ruqaa', serif;
-    font-size: 20px;
+    font-weight:700 ;
+    font-size: 25px;
     border-radius: 30px;
     cursor: pointer;
     border: none;
     outline: none;
     box-shadow: 5px 5px 5px #777;
-    
 }
 @media screen and (max-width:400px){
+    .container{
+        height: 620;
+    }
     .conttt{
         width: 100%;
     }
+    
 }
  @media screen and (max-width:300px){
      .conttt{
          margin: 0 auto 20%;
      }
-        
-}
+     .container{
+        height: 620;
+     }
+    }
 .btn:hover{
     opacity: .7;
 }
