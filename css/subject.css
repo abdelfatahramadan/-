@@ -106,22 +106,36 @@ nav ul li a{
     text-align: center;
 }
 .container .color-switcher li{
-    width: 60px;
-    height: 25px;
+    width: 80px;
+    height: 30px;
     display: inline-block;
     cursor: pointer;
     color: white;
     text-align: center;
-    line-height: 20px;
+    line-height: 30px;
 }
 .container .color-switcher li:first-child{
     background-color: red;
 }
 
+.container .color-switcher li:first-child:hover{
+    background-color:#FF5366 ;
+    box-shadow: 0 0 5px #FF5366,
+                0 0 25px #FF5366,
+                0 0 50px #FF5366,
+                0 0 200px #ff5366 ;
+}
+
 .container .color-switcher li:nth-child(2){
     background-color: black;
  }
-
+ .container .color-switcher li:nth-child(2):hover{
+    background-color:#5c5c5c ;
+    box-shadow: 0 0 5px #5c5c5c,
+                0 0 25px #5c5c5c,
+                0 0 50px #5c5c5c,
+                0 0 200px #5c5c5c;
+ }
 
  .red .container{
     background-image: url(../images/wp6025996.jpg);
